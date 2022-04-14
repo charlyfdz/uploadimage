@@ -34,6 +34,7 @@ app.use(multer({
 
 //settings
 const PORT = process.env.PORT || 3000;
+const hostname = 'localhost'
 
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -45,6 +46,6 @@ app.use(express.static(path.join(__dirname,'public')))
 app.use(require('./routes/index.routes'))
 
 //start the server
-app.listen(PORT, () => {
+app.listen(PORT, hostname,() => {
     console.log(`Our app is running on port ${ PORT }`);
 });
