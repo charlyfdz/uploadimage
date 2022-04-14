@@ -67,6 +67,10 @@
         .fixedButton{
             margin-top: 100px;
         }
+        .responsive {
+            max-width: 60%;
+            height: auto;
+        }
 
 
     </style>
@@ -74,7 +78,7 @@
 <body>
 
     <div class="container">
-        <a href="https://ippblock.com"><img src="https://i.ibb.co/q9rj4dr/IPPBLOCK-logo.png" alt=""></a>
+        <a href="https://ippblock.com"><img class="responsive" src="https://i.ibb.co/q9rj4dr/IPPBLOCK-logo.png" alt=""></a>
         <h1>Upload image</h1>
         <p>Hello, thank you for your help. </p>
 
@@ -85,11 +89,7 @@
     <div >
         <form action="/uploaded" method="post" enctype="multipart/form-data">
             
-            <label class="custom-file-upload">
-                Only accept images and PDF files
-                <input type="file" name="image-featured" accept=".png,.jpg,.jpeg,.pdf" required/>
-                
-            </label>
+            <input type="file" class="responsive" name="image-featured" accept=".png,.jpg,.jpeg,.pdf" required/>
             <p>The following form will receive a file with "PDF, JPG, PNG or JPEG" format</p>
         <p>Please from your computer or smart phone upload a photo or PDF file of your official identification or passport</p>
             <button class="btn fixedButton" type="submit">
