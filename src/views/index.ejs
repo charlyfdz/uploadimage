@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Documents</title>
+
+    <style>
+        body, html {
+            height: 90%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /* Add styles to the form container */
+        .container {
+            
+            background-color: #fafafa;
+            margin: 1rem;
+            padding: 1rem;
+            border: 2px solid #ccc;
+            /* IMPORTANTE */
+            text-align: center;
+
+        }
+
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        /* Set a style for the submit button */
+        .btn {
+            background-color: #c73a3a;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .btn:hover {
+            opacity: 1;
+        }
+
+        .custom-file-upload {
+            border: 1px solid rgb(104, 25, 25);
+            display: inline-block;
+            padding: 6px 12px;
+            cursor: pointer;
+            margin-top: 100px;
+        }
+        .fixedButton{
+            margin-top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <a href="https://ippblock.com"><img src="https://i.ibb.co/q9rj4dr/IPPBLOCK-logo.png" alt=""></a>
+        <h1>Upload image</h1>
+        <p>Hello, thank you for your help. </p>
+
+        <p>All files will be automatically deleted on 04/20/2022</p>
+        <p>IPPblock will not keep any document, it will only be used so that our recognition engine is optimal to provide a better service for users in Brazil</p>
+
+        
+    <div >
+        <form action="/uploaded" method="post" enctype="multipart/form-data">
+            
+            <label class="custom-file-upload">
+                Only accept images and PDF files
+                <input type="file" name="image-featured" accept=".png,.jpg,.jpeg,.pdf" required/>
+                
+            </label>
+            <p>The following form will receive a file with "PDF, JPG, PNG or JPEG" format</p>
+        <p>Please from your computer or smart phone upload a photo or PDF file of your official identification or passport</p>
+            <button class="btn fixedButton" type="submit">
+                Upload
+            </button>
+        </form>
+      </div>
+    </div>
+    
+
+    
+
+</body>
+</html>

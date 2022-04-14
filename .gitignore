@@ -102,3 +102,7 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+#it generates autowhen you run the program
+public/
